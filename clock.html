@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="css/clock.css">
+    
+</head>
+<body onload="startTime()"  class="background">
+    <div class="container">
+        <h1 class="heading">Welcome to the magic clock!!</h1>
+
+        <div id="time">
+          <h3 id="date">Want to know the time ? </h3>
+           <h2 id="onlytime" ></h2>
+
+        </div>
+        <div class="img">
+        <img 
+        id="image" class="image-src">  <!--https://source.unsplash.com/950x550/?cat,nap//https://via.placeholder.com/950x550-->          
+        <div class="centered" id="text"><b>Centered</b></div>
+        </div>
+        <div class="remainder">
+         <label for="wakeup"><b>Set wakeup time</b></label>
+         <select class="design" id="wakeup">
+         <option value="1">1AM-2AM</option>
+         <option value="2">2AM-3AM</option>
+         <option value="3">3AM-4AM</option>
+         <option value="4">5AM-6AM</option>
+         <option value="4">4AM-5AM</option>
+         <option value="6">6AM-7AM</option>
+         <option value="7">7AM-8AM</option>
+         <option value="8" selected>8AM-9AM</option>
+         <option value="9">9AM-10AM</option>
+         <option value="10">10AM-11AM</option>
+         <option value="11">11AM-12PM</option>
+         <option value="12">12PM-1PM</option>
+         <option value="13">1PM-2PM</option>
+         <option value="14">2PM-3PM</option>
+         <option value="15">2PM-3PM</option>
+         <option value="16">3PM-4PM</option>
+         <option value="17">4PM-5PM</option>
+         <option value="18">5M-6PM</option>
+         <option value="19">6PM-7PM</option>
+         <option value="20">7PM-8PM</option>
+         <option value="21">8PM-9PM</option>
+         <option value="22">9PM-10PM</option>
+         <option value="23">10PM-11PM</option>
+         <option value="24">11PM-12AM</option>
+        </select>
+        <br>
+
+    
+         <label for="lunch"><b>Set lunch time</b></label>
+         <select class="design" id="lunch">
+         <option value="1" selected onclick="lunchTime(value)">1AM-2AM</option>
+         <option value="2">2AM-3AM</option>
+         <option value="3">3AM-4AM</option>
+         <option value="4">4AM-5AM</option>
+         <option value="4">5AM-6AM</option>
+         <option value="6">6AM-7AM</option>
+         <option value="7">7AM-8AM</option>
+         <option value="8">8AM-9AM</option>
+         <option value="9">9AM-10AM</option>
+         <option value="10">10AM-11AM</option>
+         <option value="11">11AM-12PM</option>
+         <option value="12">12PM-1PM</option>
+         <option value="13">1PM-2PM</option>
+         <option value="14">2PM-3PM</option>
+         <option value="15">2PM-3PM</option>
+         <option value="16">3PM-4PM</option>
+         <option value="17">4PM-5PM</option>
+         <option value="18">5M-6PM</option>
+         <option value="19">6PM-7PM</option>
+         <option value="20">7PM-8PM</option>
+         <option value="21">8PM-9PM</option>
+         <option value="22">9PM-10PM</option>
+         <option value="23">10PM-11PM</option>
+         <option value="24">11PM-12AM</option>
+        </select>
+        <br>
+
+
+         <label for="nap"><b>Set nap time</b></label>
+         <select class="design" id="napTime">
+         <option value="1">1AM-2AM</option>
+         <option value="2">2AM-3AM</option>
+         <option value="3">3AM-4AM</option>
+         <option value="4">4AM-5AM</option>
+         <option value="4">5AM-6AM</option>
+         <option value="6">6AM-7AM</option>
+         <option value="7">7AM-8AM</option>
+         <option value="8">8AM-9AM</option>
+         <option value="9">9AM-10AM</option>
+         <option value="10">10AM-11AM</option> 
+         <option value="11">11AM-12PM</option>
+         <option value="12">12PM-1PM</option>
+         <option value="13">1PM-2PM</option>
+         <option value="14">2PM-3PM</option>
+         <option value="15">2PM-3PM</option>
+         <option value="16" selected >3PM-4PM</option>
+         <option value="17">4PM-5PM</option>
+         <option value="18">5M-6PM</option>
+         <option value="19">6PM-7PM</option>
+         <option value="20">7PM-8PM</option>
+         <option value="21">8PM-9PM</option>
+         <option value="22">9PM-10PM</option>
+         <option value="23">10PM-11PM</option>
+         <option value="24" >11PM-12AM</option>
+        </select>
+        <br>
+        <button id="party">party time!!</button>
+        
+       
+
+
+
+
+
+
+        </div>
+     
+
+
+        <script src="todojs/clock.js"></script>
+
+
+    </div>
+    <footer class="foot">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>© 2017-2020 Magic clock , Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+    
+</body>
+</html>

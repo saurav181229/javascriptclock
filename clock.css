@@ -1,0 +1,80 @@
+.background{
+    background-color: tomato;
+    
+}
+.container{
+    box-sizing: border-box;
+}
+
+.heading {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#date{
+    
+    text-align: center;
+}
+#onlytime{
+    text-align: center;
+}
+.image-src{
+    border: 5px solid black;
+    max-width: 100%;
+    
+    height: auto;
+
+    
+}
+.img{
+    box-sizing: border-box;
+    position: relative;
+    left: 150px;
+    
+    
+  /* /  text-align: center; */
+   
+}
+.design{
+
+
+    flex-direction: row;
+     
+
+}
+.remainder{
+    position: relative;
+    left: 550px;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    font-size: 200%;
+    left: 30%;
+    padding-top: 10%;
+    text-shadow: slategrey;
+    color: whitesmoke;
+    
+  }
+
+  #party{
+      border-radius: 5px;
+      padding: 10px 40px;
+      margin-top: 5px;
+      background-color: black;
+      color: blanchedalmond;
+      font-size: 15px;
+    }
+
+    .foot{
+
+    display: inline;
+    }
+.float-right{
+   display: inline;
+    float: right;
+}

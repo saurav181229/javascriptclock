@@ -59,40 +59,40 @@ var updateTime= function () {
 let time1=new Date();
 var hr=time1.getHours();
 console.log(hr);
-Img='/photos/afternoon.jpeg';
+Img='afternoon.jpeg';
 let txt=document.getElementById('text');
 let msg;
 
 //image=document.createAttribute('img');
     if(hr==wakeUp) {
         
-   img='/photos/goodmrng';
+   img='goodmrng';
    msg=`"good morning get up"`;
 
 }
 
 else if (hr==lunchTime){
-    img='/photos/food.jpeg';
+    img='food.jpeg';
     msg=`"its lunch time"`;
 
 
 }
 else if(hr==naptime){
-   img= '/photos/nap.jpeg';
+   img= 'nap.jpeg';
    msg=`"its nap time"`;
 }
 
 else if(hr>evening){
-    img='/photos/evening.jpeg'
+    img='evening.jpeg'
     msg=`"good evening"`;
 }
 else if(hr<noon){
-    img='/photos/goodmrng.jpeg';
+    img='goodmrng.jpeg';
     msg=`"good morning"`;
 }
 
 else {
-    img='/photos/afternoon.jpeg';
+    img='afternoon.jpeg';
     msg=`"good afternoon"`;
 }
 image.src=img;
@@ -105,7 +105,7 @@ document.getElementById('wakeup').addEventListener('change',wakeUP);
 function wakeUP()
 {
 
-    let img='/photos/goodmrng';
+    let img='goodmrng.jpeg';
     msg=`"good morning get up"`;
     document.getElementById('image').src=img;
     document.getElementById('text').innerText=msg;
@@ -113,7 +113,7 @@ function wakeUP()
 document.getElementById('lunch').addEventListener('change',Lunch);
 function Lunch(){
 
-    let img='/photos/food.jpeg';
+    let img='food.jpeg';
     let msg=`"its lunch time"`;
     document.getElementById('image').src=img;
     document.getElementById('text').innerText=msg;
@@ -123,7 +123,7 @@ document.getElementById('napTime').addEventListener('click',napTime);
 
 function napTime(){
 
-    let img= '/photos/nap.jpeg';
+    let img= 'nap.jpeg';
    let msg=`"its nap time"`;
    document.getElementById('image').src=img;
    document.getElementById('text').innerText=msg;
@@ -133,7 +133,7 @@ function napTime(){
 document.getElementById('party').addEventListener('click',function(){
    
     if(document.getElementById('party').innerText==`party time!!`){
-  let img="/photos/party.jpeg";
+  let img="party.jpeg";
   let txt=`"its party time"`;
   document.getElementById('image').src=img;
    document.getElementById('text').innerText=txt;
@@ -143,14 +143,6 @@ document.getElementById('party').addEventListener('click',function(){
     document.getElementById('party').innerText=`party time!!`;
     updateTime();
     }
-   //  if(document.getElementById('party').innerText==`party over!!`){
-  //    updateTime();
-//}
+   
 })
 
-/*if((document.getElementById('party').innerText===`party over!!`)){
-  document.getElementById('party').addEventListener('click',function(){
-      document.getElementById('party').innerText='party time';
-      updateTime();
-  })
-}*/
